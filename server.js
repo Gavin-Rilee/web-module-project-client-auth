@@ -11,39 +11,39 @@ let nextId = 7;
 let friends = [
   {
     id: 1,
-    name: 'Rachel Green',
-    age: 30,
-    email: 'rachel@friends.com'
+    name: 'Tony Stark',
+    age: 48,
+    email: 'Iamthebest@yousuck.com'
   },
   {
     id: 2,
-    name: 'Joey Tribbiani',
-    age: 34,
-    email: 'joey@friends.com'
+    name: 'Peter Parker',
+    age: 28,
+    email: 'Iamdefnotspiderman@nyc.com'
   },
   {
     id: 3,
-    name: 'Chandler Bing',
-    age: 32,
-    email: 'chandler@friends.com'
+    name: 'Steve Rogers',
+    age: 103,
+    email: 'starsandstripes@america.com'
   },
   {
     id: 4,
-    name: 'Ross Geller',
-    age: 32,
-    email: 'ross@friends.com'
+    name: 'Eddie Brock',
+    age: 31,
+    email: 'Killthespiderman@venom.com'
   },
   {
     id: 5,
-    name: 'Monica Bing',
-    age: 31,
-    email: 'monica@friends.com'
+    name: 'Victor Von Doom',
+    age: 51,
+    email: 'allwillbowtodoom@doom.com'
   },
   {
     id: 6,
-    name: 'Phoebe Buffay-Hannigan',
-    age: 30,
-    email: 'phoebe@friends.com'
+    name: 'Nightmare',
+    age: 47532,
+    email: 'Yourworst@nightmare.com'
   }
 ];
 
@@ -62,7 +62,7 @@ function authenticator(req, res, next) {
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === 'Lambda School' && password === 'i<3Lambd4') {
+  if (username === 'Gavin' && password === 'Snurch') {
     req.loggedIn = true;
     res.status(200).json({
       payload: token
